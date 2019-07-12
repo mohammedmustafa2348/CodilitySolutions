@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class FrogJump {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Scanner inScanner = new Scanner(System.in);
+        int X = inScanner.nextInt();
+        int Y = inScanner.nextInt();
+        int D = inScanner.nextInt();
+        System.out.print(solution(X, Y, D));
+        inScanner.close();
+
+
+    }
+
+    public static int solution(int X, int Y, int D) {
+        // write your code in Java SE 8
+        double numOfJumps = (double)(Y - X)/D;
+        return (int) Math.ceil(numOfJumps);
+    }
+}
